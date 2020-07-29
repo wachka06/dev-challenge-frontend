@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import data from './data';
+import CarouselContainer from './CarouselContainer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    data: [],
+  }
+
+  componentDidMount = () => {
+    this.setState({ data })
+  }
+
+  render () {
+    // console.log(this.state.data)
+    return (
+      <div className="App">
+        {/* <img className="Background-img" src={backgroundImg} alt={text.bgimg} /> */}
+        <CarouselContainer
+          content={this.state.data[0]}
+        />
+        {/* <CarouselContainer
+          content={this.state.data[1]}
+        /> */}
+      </div>
+    )
+  }
 }
 
 export default App;
