@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
-import data from './data';
-import CarouselContainer from './CarouselContainer';
+import '../css/App.css';
+import data from '../data';
+import CarouselContainerTop from './CarouselContainerTop';
+import CarouselContainerBottom from './CarouselContainerBottom';
 
 class App extends Component {
   state = {
@@ -16,13 +17,12 @@ class App extends Component {
     // console.log(this.state.data)
     return (
       <div className="App">
-        {/* <img className="Background-img" src={backgroundImg} alt={text.bgimg} /> */}
-        <CarouselContainer
+        <CarouselContainerTop
           content={this.state.data[0]}
         />
-        {/* <CarouselContainer
+        <CarouselContainerBottom
           content={this.state.data[1]}
-        /> */}
+        />
       </div>
     )
   }
