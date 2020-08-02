@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="136px" height="144px" viewBox="0 0 136 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>*</title>
+    <defs>
+        <rect id="path-1" x="0.5" y="0" width="135.345238" height="143.968421"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy" transform="translate(-450.000000, -308.000000)">
+            <g id="*" transform="translate(450.000000, 308.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <text fill="#f2d448" mask="url(#mask-2)" font-family="Lato-Regular, Lato" font-size="446" font-weight="normal">
+                    <tspan x="-26.275" y="336">*</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

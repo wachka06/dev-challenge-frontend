@@ -3,6 +3,7 @@ import "../css/App.css";
 import data from "../data";
 import Carousel from "./Carousel";
 import Button from "react-bootstrap/Button";
+import AsteriskImage from "../assets/asterisk.svg";
 
 class App extends Component {
   render() {
@@ -11,15 +12,13 @@ class App extends Component {
         {data.map((carouselData, index) => {
           const messageColor = index % 2 === 0 ? "black" : "blue";
           const asteriskPosition = index % 2 === 0 ? "right" : "left";
+
           return (
             <div className="carousel-wrapper" key={index}>
-              <div
-                className={`giant-asterisk giant-asterisk-${asteriskPosition}`}
-              >
-                <p className="giant-asterisk-p" aria-hidden="true">
-                  *
-                </p>
-              </div>
+              <img
+                src={AsteriskImage}
+                className={`asterisk asterisk-${asteriskPosition}`}
+              />
               <Carousel
                 className="carousel"
                 key={index}

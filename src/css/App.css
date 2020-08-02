@@ -5,29 +5,20 @@
   overflow-x: hidden;
 }
 
-.giant-asterisk {
+.asterisk {
   position: absolute;
-  top: 42vh;
-  z-index: -1;
+  top: 16vw;
+  top: 0;
+  height: 350px;
+  top: 30px;
 }
 
-.giant-asterisk-p {
-  color: #f2d448;
-  font-size: 182vh;
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  height: 280px;
-  line-height: 470px;
-  width: 90%;
-  text-align: left;
-}
-
-.giant-asterisk-right {
+.asterisk-right {
   right: 0;
   transform: translateX(45%);
 }
 
-.giant-asterisk-left {
+.asterisk-left {
   left: 0;
   transform: translateX(-45%);
 }
@@ -40,7 +31,6 @@
 
 .carousel {
   width: 100vw;
-  height: 40vh;
 }
 
 .carousel-wrapper {
@@ -54,7 +44,7 @@
 }
 
 .carousel-indicators li {
-  margin: 0.4rem !important;
+  margin: 0 0.4rem !important;
   width: 0.6rem !important;
   height: 0.6rem !important;
   border-radius: 100% !important;
@@ -63,7 +53,6 @@
 
 .quote-container {
   width: 70%;
-  height: 40vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -73,6 +62,8 @@
 .quote-message {
   font-size: 1.9rem;
   text-align: center;
+  height: 400px;
+  overflow: hidden;
 }
 
 .caption-container {
@@ -107,202 +98,4 @@
   padding: 0.5rem 1.3rem;
   margin-top: 2.5rem;
   margin-bottom: 5rem;
-}
-
-@media only screen and (max-width: 2072px) {
-  .giant-asterisk {
-    top: 61vh;
-  }
-  .giant-asterisk-p {
-    font-size: 205vh;
-  }
-  .section-title {
-    margin: 2rem 0;
-    font-size: 1.8rem;
-  }
-  .carousel {
-    height: 45vh;
-  }
-  .carousel-indicators li {
-    margin: 0.6rem !important;
-    width: 0.8rem !important;
-    height: 0.8rem !important;
-  }
-  .quote-container {
-    height: 44vh;
-  }
-  .quote-message {
-    font-size: 3rem;
-  }
-  .quote-attribution {
-    font-size: 2.6rem;
-    margin: 2rem;
-  }
-  .button {
-    margin-bottom: 15rem;
-  }
-}
-
-@media only screen and (max-width: 1440px) {
-  .giant-asterisk {
-    top: 41vh;
-  }
-  .giant-asterisk-p {
-    font-size: 140vh;
-  }
-  .section-title {
-    font-size: 1.2rem;
-  }
-  .carousel {
-    height: 59vh;
-  }
-  .carousel-indicators {
-    bottom: -3rem;
-  }
-  .quote-container {
-    height: 61vh;
-  }
-  .quote-message {
-    font-size: 2.4rem;
-  }
-  .quote-attribution {
-    font-size: 1.6rem;
-    margin: 2rem;
-  }
-  .button {
-    margin-top: 3rem;
-    margin-bottom: 18rem;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .giant-asterisk-p {
-    font-size: 138vh;
-  }
-  .carousel {
-    width: 100vw;
-    height: 35vh;
-  }
-  .quote-container {
-    height: 36vh;
-  }
-  .button {
-    margin-bottom: 7rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .giant-asterisk {
-    top: 33vh;
-  }
-  .giant-asterisk-p {
-    font-size: 129vh;
-  }
-  .carousel-wrapper {
-    margin-top: 1rem;
-  }
-  .carousel {
-    height: 27vh;
-  }
-  .section-title {
-    font-size: 0.8rem;
-  }
-  .carousel-indicators {
-    bottom: -3rem;
-  }
-  .quote-container {
-    height: 27vh;
-  }
-  .quote-message {
-    font-size: 1.4rem;
-  }
-  .quote-attribution {
-    margin: 1.2rem;
-    font-size: 1.2rem;
-  }
-  .carousel-caption {
-    bottom: 0.4rem;
-  }
-  .button {
-    margin-top: 3rem;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .giant-asterisk {
-    top: 27vh;
-  }
-  .giant-asterisk-p {
-    font-size: 134vh;
-  }
-  .section-title {
-    margin: 1rem;
-    font-size: 0.5rem;
-  }
-  .arrow {
-    font-size: 1rem;
-  }
-  .carousel {
-    height: 36vh;
-  }
-  .carousel-indicators {
-    bottom: -2rem;
-  }
-  .carousel-indicators li {
-    margin: 0.2rem !important;
-    width: 0.4rem !important;
-    height: 0.4rem !important;
-  }
-  .quote-container {
-    height: 37vh;
-  }
-  .quote-message {
-    font-size: 1rem;
-  }
-  .line {
-    width: 2rem;
-    height: 1px;
-  }
-  .quote-attribution {
-    font-size: 0.75rem;
-    margin-top: 0.5rem;
-  }
-  .button {
-    font-size: 0.5rem !important;
-    padding: 0.2rem 0.6rem !important;
-    margin-top: 1.2rem !important;
-    margin-bottom: 3rem !important;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .giant-asterisk {
-    top: 18vh;
-  }
-  .section-title {
-    margin-top: 0.4rem;
-  }
-  .carousel {
-    height: 36vh;
-  }
-  .carousel-indicators {
-    bottom: -1rem;
-  }
-  .carousel-indicators li {
-    width: 0.2rem !important;
-    height: 0.2rem !important;
-  }
-  .quote-container {
-    height: 36vh;
-  }
-  .quote-message {
-    font-size: 0.75rem;
-  }
-  .quote-attribution {
-    font-size: 0.55rem;
-  }
-  .button {
-    margin-top: 0 !important;
-    margin-bottom: 2rem !important;
-  }
 }

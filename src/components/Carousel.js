@@ -3,13 +3,7 @@ import BootstrapCarousel from "react-bootstrap/Carousel";
 
 class Carousel extends Component {
   render() {
-    const {
-      key,
-      sectionTitle,
-      quotes,
-      messageColor = "black",
-      asteriskPosition = "right",
-    } = this.props;
+    const { key, sectionTitle, quotes, messageColor = "black" } = this.props;
 
     return (
       <>
@@ -25,13 +19,11 @@ class Carousel extends Component {
                   <p className="quote-message" style={{ color: messageColor }}>
                     {quote.message}
                   </p>
-                </div>
-                <BootstrapCarousel.Caption style={{ paddingBottom: "0" }}>
                   <div className="caption-container">
                     <div className="line" />
                     <p className="quote-attribution">{quote.attribution}</p>
                   </div>
-                </BootstrapCarousel.Caption>
+                </div>
               </BootstrapCarousel.Item>
             );
           })}
